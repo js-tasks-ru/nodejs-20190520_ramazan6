@@ -1,5 +1,8 @@
 function sum(a, b) {
-  /* ваш код */
+  if (Number.isInteger(a + b)) {
+  	return a + b;
+  }
+  throw new TypeError;
 }
 
 module.exports = sum;
